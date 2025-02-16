@@ -18,9 +18,10 @@
         box-sizing: border-box;
     }
 
-    .container {
+    .flower {
         width: 100%;
-        height: 100vh;
+        position: absolute;
+        top: 200px;
         align-items: center;
         display: flex;
         justify-content: center;
@@ -28,15 +29,16 @@
 
     .valentine-text {
         position: absolute;
-        top: 50px;
+        top: -50px;
         display: flex;
         justify-content: center;
         width: 100%;
+        left: -35px;
     }
 
     .falling-hearts {
         position: absolute;
-        top: 50px;
+        top: 0px;
         display: flex;
         justify-content: center;
         width: 100%;
@@ -46,56 +48,37 @@
     .next-btn {
         width: 100%;
         position: absolute;
-        top: 600px;
+        top: 400px;
         display: flex;
         justify-content: center;
     }
 
-    .name {
-        position: absolute;
-        top: 255px;
-        display: flex;
-        justify-content: center;
-        width: 100%;
+    .main-body{
+        /* border: 5px solid black; */
+        height: 100vh;
     }
 </style>
 
 <body>
 
-    <div class="falling-hearts">
-        <dotlottie-player src="https://lottie.host/6d27186c-58bc-43a1-84c6-510cf908be74/6QrmmdrSFX.lottie"
-            background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
-    </div>
-
-    <div class="valentine-text">
-        <dotlottie-player src="https://lottie.host/c6f520eb-1645-4e10-85c8-8ea03f7925ad/nKXDmAIPxx.lottie"
-            background="transparent" speed="1" style="width: 300px; height: 300px" autoplay></dotlottie-player>
-    </div>
-
-    <!-- <div class="name">
-        <div class="first-letter">
-            <dotlottie-player src="https://lottie.host/31ee4a63-d804-46a5-ba57-3a0c7c56122e/oOET6EwlYd.lottie"
-                background="transparent" speed="0.3" style="width: 50px; height: 50px" loop autoplay></dotlottie-player>
+    <div class="main-body">
+        <div class="falling-hearts">
+            <dotlottie-player src="https://lottie.host/6d27186c-58bc-43a1-84c6-510cf908be74/6QrmmdrSFX.lottie"
+                background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
         </div>
-        <div class="first-letter">
-            <dotlottie-player src="https://lottie.host/98fcf8a8-6934-45d3-9723-9822361284a6/UFLc2rSK4Y.lottie"
-                background="transparent" speed="0.3" style="width: 50px; height: 50px; margin-top: 4px;" loop autoplay></dotlottie-player>
+        <div class="valentine-text">
+            <dotlottie-player src="https://lottie.host/c6f520eb-1645-4e10-85c8-8ea03f7925ad/nKXDmAIPxx.lottie"
+                background="transparent" speed="1" style="width: 375px; height: 375px" autoplay></dotlottie-player>
         </div>
-        <div class="first-letter">
-            <dotlottie-player src="https://lottie.host/2bfa2b8c-e71a-4286-83bc-8ce4f611ce6b/NLmXwlEkjO.lottie"
-                background="transparent" speed="0.3" style="width: 50px; height: 50px; margin-top: 4px;" loop autoplay></dotlottie-player>
+        <div class="flower">
+            <dotlottie-player src="https://lottie.host/fd807075-d1f2-43c2-be12-8549c1c76554/645FGOAAmO.lottie"
+                background="transparent" speed="0.4" style="width: 300px; height: 300px" autoplay>
+            </dotlottie-player>
         </div>
-    </div> -->
-
-    <div class="container">
-        <dotlottie-player src="https://lottie.host/fd807075-d1f2-43c2-be12-8549c1c76554/645FGOAAmO.lottie"
-            background="transparent" speed="0.4" style="width: 300px; height: 300px" autoplay>
-        </dotlottie-player>
-    </div>
-
-    <div class="next-btn">
-        <dotlottie-player src="https://lottie.host/caf2a8f7-c9e7-4826-bce3-7d9665a00ff3/5N7BM9GExR.lottie"
-            background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+        <div class="next-btn">
+            <dotlottie-player src="https://lottie.host/caf2a8f7-c9e7-4826-bce3-7d9665a00ff3/5N7BM9GExR.lottie"
+                background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+        </div>
     </div>
 
 
