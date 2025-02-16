@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For My Everything 🌹</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(160deg, #ff758c, #ff7eb3);
+            font-family: 'Dancing Script', cursive;
+            overflow-x: hidden;
+            touch-action: manipulation;
+        }
+
+        .container {
+            position: relative;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Blooming Flowers Animation */
+        .flower {
+            position: fixed;
+            width: 40px;
+            height: 40px;
+            background: #ff69b4;
+            clip-path: polygon(
+                50% 0%,
+                60% 40%,
+                100% 50%,
+                60% 60%,
+                50% 100%,
+                40% 60%,
+                0% 50%,
+                40% 40%
+            );
+            animation: bloom 2s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes bloom {
+            0% { transform: scale(0); opacity: 0; }
+            100% { transform: scale(1) rotate(360deg); opacity: 0.8; }
+        }
+
+        /* Love Letter Card */
+        .love-letter {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(50px);
+            opacity: 0;
+            animation: cardEntry 1.5s ease-out forwards;
+        }
+
+        @keyframes cardEntry {
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff1493;
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .paragraph {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            color: #5a5a5a;
+            margin: 25px 0;
+            padding: 15px;
+            border-left: 3px solid #ff69b4;
+            transform: translateX(-30px);
+            opacity: 0;
+            transition: all 0.8s ease;
+        }
+
+        .visible {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        /* Floating Hearts Background */
+        .hearts {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 1.5rem;
+            animation: float 6s infinite linear;
+            opacity: 0.3;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(110vh) rotate(0deg); }
+            100% { transform: translateY(-10vh) rotate(360deg); }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ff69b4;
+            border-radius: 10px;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 600px) {
+            .love-letter {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .paragraph {
+                font-size: 1.2rem;
+                padding: 10px;
+            }
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="hearts" id="hearts"></div>
+    <div class="container">
+        <div class="love-letter">
+            <h1>To Love of my Life</h1>
+
+            <div class="paragraph visible">
+                Meri Duaaaaa jiiiiii, from the moment your light first entered my life, everything I knew about love changed 💗🤧✨. There was a time when I thought love was just a feeling, something fleeting and delicate, but with you, I’ve come to understand that it’s so much more 🤧🤧❤️. Tumhari mohabbat aik roshni ki tarah hai, jo meri zindagi ko har din roshan karti hai, even on days when I don’t feel like myself 💖✨. Tumhari har ada, har baat mere liye kisi nayi kahani ka aaghaz hoti hai, something that pulls me deeper into the essence of who you are 🤌🥹💕. You’re not just beautiful—your beauty shines from within, from your heart and soul, and it reaches me in ways I can’t even begin to describe 😭💗🤧🤌🤭😃.
+            </div>
+
+            <div class="paragraph">
+                Your eyes 😃, those mesmerizing galaxies, hold universes within them 🤌💗💗💗. Har baar jab mein tumhari aankhon mein dekhta hoon, it feels like I’m being drawn into a place where I belong 😚, a place filled with kindness, warmth, and an unspoken understanding ✨😚💗😃🫠🫠. Tumhari aankhon mein woh gehrai hai jo mujhe apne tamam dukh, tamam khushi, sab kuch keh denay par majboor kar deti hai, because with you, I feel safe. I feel known. I feel cherished 😽🫶👉👈✨.
+            </div>
+
+            <div class="paragraph">
+                The way you smile—it’s like a sunrise that sweeps away all the darkness I’ve ever felt ✨💗. Jab tum muskurati ho, to meri zindagi ka har gham chhup jata hai, and suddenly, nothing else matters 🤭✨😃😽. Your laughter—it’s a melody that transforms every ordinary moment into something magical 💖💫. You take the simplest of things and turn them into memories I want to hold onto forever ❤️. Aur jab tum hasti ho, lagta hai jaise duniya ka sab se khubsurat awaz sun raha hoon, one that plays just for me 😃😃💗😚🤌.
+            </div>
+
+            <div class="paragraph">
+                But beyond all of this—beyond the beauty, the laughter, and the light—what truly takes my breath away is the depth of your soul 😭💖✨. Tumhari rooh mein jo mohabbat hai, jo sachai hai, wo meri zindagi ka sab se bara asar hai 💫. Your compassion, your empathy, the quiet strength that you carry so effortlessly—it leaves me in awe every day 🌹💖🫶. You never seek the spotlight, but it finds you because of the way you make everyone around you feel valued and heard ✨🤌💗. Tum wo ho jo har shakhs ko apni ahmiyat ka ehsaas dilati ho, and that’s one of the many reasons I love you so deeply 😭💫.
+            </div>
+
+            <div class="paragraph">
+                With you, I have discovered what it means to be fully and truly known ✨😃🤧💗🫠🤭. Tum mujhe aise samajhti ho jaise kisi ne kabhi samjha nahi 😭💗💫. You’ve seen all my flaws, my insecurities, the parts of me I try to hide from the world 🫶🥹. Aur phir bhi, tum mujhe usi shiddat se chahti ho jaise pehli dafa chaha tha, as if I’m still worth it 🫠🫠🫠. And that’s what makes you so incredibly special 🤌💗. You don’t make me feel loved just through grand gestures or words, but in the little things 💖✨—tumhari har baat se mujhe yeh ehsaas hota hai ke mein tumhari duniya hoon 🤭😃✨💗🤧🤌. The way you listen, the way you make me feel heard, jaise meri har baat tumhare liye koi shaairi ho 🌹✨.
+            </div>
+
+            <div class="paragraph">
+                You are my first priority 💖✨, har faislay mein tum meri rehnumai karti ho, mere har kadam ka sabab tum ho 🫶💗. In this often chaotic world, you are my sanctuary—tumhara saath meri zindagi ka wo hissa hai jo har tufaan mein meri rehnumai karta hai 💫✨. I strive to be better, not just for myself, but for you 💗🤧. Tumhari mohabbat mujhe behtareen banati hai 😭✨, you make me want to be kinder, stronger, and more patient 💖💪. No dream, no ambition, no fleeting distraction could ever outweigh the sacred place you hold in my life 🌹🤌.
+            </div>
+
+            <div class="paragraph">
+                Every day, I wake up and choose you—not because I have to, but because I want to, because I can’t imagine my life without you in it 💫💗🤧. Har subah jab meri aankh khulti hai, tumhara khayal sab se pehla hota hai ✨💖. And at night, before I drift off to sleep, it’s your name that whispers through my mind 🫠🌙✨. It’s always you—tumhara khayal, tumhara pyar meri rooh ka hissa ban chuka hai 💗🌹✨. You are the reason behind every effort I make, every decision I take ✨💖. You’re the quiet “why” behind everything I do 💫🌹. Tum wo sitara ho jo meri zindagi ke har raaste ko roshan karta hai ✨🌟💗.
+            </div>
+
+            <div class="paragraph">
+                I choose you with every breath, with every heartbeat—not out of habit but with pure intention 🫠💖. Tumhare liye meri mohabbat roz barhti hai 💫, like roots that dig deeper into the earth, grounding us both 🤧✨. Tum meri humsafar ho 💗🤝, meri raah ho, and I can’t wait to spend every day of my life discovering more of you, more of us 🫠💖✨. You’ve turned my life into a story worth telling—a story filled with love, laughter, and a depth that I never knew could exist 🌹💫💗.
+            </div>
+
+            <div class="paragraph">
+                Mujhe kabhi kabhi lagta hai ke jo humare darmiyan hai, wo sirf ek mohabbat nahi, balki ek kahani hai 🤧💗✨, aisi kahani jo log afsane bana kar likhtay hain, magar hum usse jee rahe hain 🤌🤭😽💖. You are my greatest adventure, meri har dua ka jawab 🤲😚💗, and the kind of love that myths and legends are written about ✨🫠🤧💗. Thank you for being my always, my forever, meri zindagi ka har hissa 🫶💖🌹. Tum meri kahani ho ✨🤧😃, meri manzil, and the infinite horizon I want to explore, hand in hand, by your side 🫠💗🤝✨. I love you in ways that transcend words, beyond measure, and even beyond the boundaries of this world 😽✨💗🫶. Tumhari mohabbat mere liye sab kuch hai, aur mein tumse har din aur zyada pyar karta hoon 💖✨🌹
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Elements -->
+    <div class="flower" style="top:10%; left:20%"></div>
+    <div class="flower" style="top:30%; left:70%"></div>
+    <div class="flower" style="top:80%; left:40%"></div>
+
+    <script>
+        // Create floating hearts
+        function createHearts() {
+            const heartsContainer = document.getElementById('hearts');
+            for (let i = 0; i < 15; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.innerHTML = '❤️';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.animationDuration = Math.random() * 3 + 4 + 's';
+                heart.style.animationDelay = Math.random() * 2 + 's';
+                heart.style.fontSize = Math.random() * 10 + 15 + 'px';
+                heartsContainer.appendChild(heart);
+            }
+        }
+
+        // Paragraph scroll animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    createFlower(entry.target.getBoundingClientRect());
+                }
+            });
+        }, { threshold: 0.3 });
+
+        document.querySelectorAll('.paragraph').forEach(p => observer.observe(p));
+
+        // Create flower animation on paragraph visibility
+        function createFlower(rect) {
+            const flower = document.createElement('div');
+            flower.className = 'flower';
+            flower.style.left = rect.left + rect.width/2 + 'px';
+            flower.style.top = rect.top + 'px';
+            document.body.appendChild(flower);
+            setTimeout(() => flower.remove(), 2000);
+        }
+
+        // Initialize
+        createHearts();
+
+        // Add touch interaction
+        document.addEventListener('touchstart', (e) => {
+            createHeart(e.touches[0].clientX, e.touches[0].clientY);
+        });
+
+        function createHeart(x, y) {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.innerHTML = '❤️';
+            heart.style.left = x + 'px';
+            heart.style.top = y + 'px';
+            heart.style.animation = 'float 4s linear';
+            heart.style.opacity = '0.7';
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 4000);
+        }
+    </script>
+</body>
+</html>
